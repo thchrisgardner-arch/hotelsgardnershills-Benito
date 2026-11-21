@@ -1,17 +1,22 @@
 /**
  * Datos generales del hotel.
  * Lo que es `null` está PENDIENTE de confirmar: la interfaz lo muestra como "Por confirmar".
- * Teléfono, WhatsApp y correo confirmados por el cliente (2026-11-18).
+ * Sede San Benito Abad (Sucre).
+ * TODO PENDIENTE: teléfono, WhatsApp, correo, dirección, coordenadas y RNT de la sede San Benito.
+ * Mientras llegan, se mantiene la línea de la marca (confirmada para Villanueva el 2026-11-18) para que
+ * WhatsApp y el correo sigan funcionando; en Contacto se avisa que está por confirmar para esta sede.
  */
 export const site = {
   name: "Gardners Hills",
-  descriptor: "Hotel in Villanueva",
+  descriptor: "Hotel in San Benito Abad",
   location: {
-    town: "Villanueva",
-    region: "La Guajira",
+    town: "San Benito Abad",
+    region: "Sucre",
     country: "Colombia",
-    address: null as string | null,
-    mapsUrl: null as string | null,
+    address: null as string | null, // TODO PENDIENTE: dirección de la sede
+    mapsUrl: null as string | null, // TODO PENDIENTE: coordenadas / enlace de Google Maps
+    /** Registro Nacional de Turismo. TODO PENDIENTE */
+    rnt: null as string | null,
   },
   contact: {
     /** Formato internacional sin "+" ni espacios */

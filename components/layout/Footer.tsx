@@ -23,13 +23,13 @@ export function Footer() {
       <div className="grid gap-14 max-md:grid-cols-2 max-md:gap-x-6 max-md:gap-y-12 lg:grid-cols-12">
         <div className="max-md:col-span-2 lg:col-span-5">
           {/* Sin animación de revelado: al final de la página el disparador podía no alcanzarse */}
-          <p className="text-[0.92rem] uppercase tracking-[0.3em] text-granate">{t("villanueva1")}</p>
+          <p className="text-[0.92rem] uppercase tracking-[0.3em] text-granate">{t("sede1")}</p>
           <p className="t-italic mt-6 text-left text-[clamp(2.6rem,5vw,5.2rem)] leading-[1] lg:text-[clamp(2.6rem,4.2vw,4.4rem)]">
-            {t("villanueva2")}
+            {t("sede2")}
             <br />
-            {t("villanueva3")}
+            {t("sede3")}
             <br />
-            {t("villanueva4")}
+            {t("sede4")}
           </p>
           {/* Sin botón de reserva aquí (2026-11-20): la reserva sigue en el enlace «Reservas» de Explorar */}
         </div>

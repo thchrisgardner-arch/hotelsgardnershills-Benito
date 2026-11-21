@@ -215,7 +215,7 @@ export function Header() {
               </ul>
             </nav>
             <div data-m-fade className="flex flex-wrap items-center gap-x-10 gap-y-3 border-t border-granate/15 pt-6 text-[0.95rem] font-normal uppercase tracking-[0.16em] text-granate">
-              <span>Villanueva · La Guajira</span>
+              <span>San Benito Abad · Sucre</span>
               {menuSecundario.map((n) => (
                 <a key={n.href} href={n.href} target={n.href.startsWith("http") ? "_blank" : undefined} rel="noreferrer" className="text-[1.2rem] normal-case tracking-normal hover:text-carmesi">
                   {n.label}
@@ -228,7 +228,7 @@ export function Header() {
             <div className="relative aspect-[4/5] w-full overflow-hidden bg-rosa">
               <Image
                 src="/images/cabanas/cabana-arco.jpg"
-                alt={lang === "es" ? "Cabaña de Gardners Hills con ventanal en arco frente a la sierra" : "Gardners Hills cabin with an arched window facing the mountains"}
+                alt={lang === "es" ? "Cabaña de Gardners Hills con ventanal en arco junto a la ciénaga" : "Gardners Hills cabin with an arched window by the wetland"}
                 fill
                 sizes="460px"
                 className="object-cover"
