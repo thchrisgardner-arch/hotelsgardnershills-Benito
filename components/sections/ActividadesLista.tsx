@@ -7,8 +7,8 @@ import type { Lang } from "@/lib/routes";
 /** Actividades en los alrededores (dentro de Servicios) */
 export function ActividadesLista({ lang }: { lang: Lang }) {
   const t = {
-    es: { aria: "Actividades", l1: "Explora las actividades", l2a: "que te esperan", l2b: "cerca", p: "Villanueva está a los pies de la Serranía del Perijá: montaña, música vallenata y vida local para descubrir sin prisa, y volver a la calma de la cabaña al final del día.", cta: "Reservar ahora" },
-    en: { aria: "Activities", l1: "Explore the activities", l2a: "waiting for you", l2b: "nearby", p: "Villanueva lies at the foot of the Serranía del Perijá: mountains, vallenato music and local life to discover unhurried, then return to the calm of your cabin at the end of the day.", cta: "Book now" },
+    es: { aria: "Actividades", l1: "Explora lo que", l2a: "te espera", l2b: "cerca", p: "San Benito Abad está a orillas de la ciénaga y del río San Jorge: fe, agua y vida de pueblo para descubrir sin prisa, y volver a la calma de la cabaña al final del día.", cta: "Reservar ahora" },
+    en: { aria: "Activities", l1: "Explore what", l2a: "awaits you", l2b: "nearby", p: "San Benito Abad lies on the banks of the wetland and the San Jorge River: faith, water and small-town life to discover unhurried, then return to the calm of your cabin at the end of the day.", cta: "Book now" },
   }[lang];
   return (
     <section id="actividades" aria-label={t.aria} className="scroll-mt-24 border-t border-granate/15 px-[var(--gutter)] py-28 sm:py-36">

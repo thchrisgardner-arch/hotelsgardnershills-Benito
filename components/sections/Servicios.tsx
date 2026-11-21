@@ -7,7 +7,7 @@ import { Arch } from "@/components/ui/Arch";
 import { Pill } from "@/components/ui/Pill";
 import { useLang } from "@/lib/i18n";
 
-/** Pestañas Hotel / Spa / Gym del XD: texto a la izquierda, imagen en arco a la derecha */
+/** Pestañas Hotel / Piscina / Ciénaga / Basílica: texto a la izquierda, imagen a la derecha */
 export function Servicios() {
   const { lang } = useLang();
   const [i, setI] = useState(0);
@@ -34,7 +34,7 @@ export function Servicios() {
     <section id="servicios" aria-label={lang === "es" ? "Servicios" : "Services"} className="bg-marfil/40 px-[var(--gutter)] py-28 sm:py-36">
       <div className="grid items-center gap-16 lg:grid-cols-2">
         <div className="flex h-full flex-col">
-          <div role="tablist" aria-label={lang === "es" ? "Servicios" : "Services"} className="flex gap-6 sm:gap-10">
+          <div role="tablist" aria-label={lang === "es" ? "Servicios" : "Services"} className="flex gap-6 max-sm:justify-center max-sm:gap-x-3 sm:gap-10">
             {servicios.map((x, n) => (
               <button
                 key={x.id}
@@ -42,7 +42,7 @@ export function Servicios() {
                 aria-selected={n === i}
                 aria-controls="servicio-panel"
                 onClick={() => select(n)}
-                className={`relative min-h-11 py-2 text-[0.92rem] font-normal uppercase tracking-[0.24em] transition-colors ${
+                className={`relative min-h-11 py-2 text-[0.92rem] font-normal uppercase tracking-[0.24em] transition-colors max-sm:text-[0.8rem] max-sm:tracking-[0.06em] ${
                   n === i ? "text-granate" : "text-granate/70 hover:text-granate"
                 }`}
               >

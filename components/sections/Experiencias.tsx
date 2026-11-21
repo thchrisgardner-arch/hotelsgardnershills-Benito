@@ -7,7 +7,7 @@ import type { Lang } from "@/lib/routes";
 /** «El tiempo para disfrutar sin prisa»: fila de tarjetas alineadas; cada una enlaza a su página */
 export function Experiencias({ lang }: { lang: Lang }) {
   const t = {
-    es: { k: "Experiencias", l1: "El tiempo para", l2a: "disfrutar", l2b: "sin prisa.", mas: "Descubre más", alt: "Imagen de la experiencia" },
+    es: { k: "Experiencias", l1: "El tiempo para", l2a: "disfrutar", l2b: "sin prisa.", mas: "Descubre más", alt: "Imagen de la experiencia" }, // TODO PENDIENTE: fotos reales de la sede
     en: { k: "Experiences", l1: "Time to enjoy", l2a: "life,", l2b: "unhurried.", mas: "Discover more", alt: "Image of the experience" },
   }[lang];
   return (

@@ -1,6 +1,6 @@
 /**
  * Categorías editoriales de experiencia (concepto, no servicios cerrados).
- * Textos basados en la identidad verbal del manual de marca. Cada una enlaza a la página relacionada.
+ * Textos de la sede San Benito Abad. Cada una enlaza a la página relacionada.
  */
 type Texto = { es: string; en: string };
 export type Experiencia = {
@@ -8,23 +8,23 @@ export type Experiencia = {
   titulo: Texto;
   texto: Texto;
   href: string;
-  icono: "moon" | "trees" | "utensils" | "sunrise";
+  icono: "waves" | "trees" | "utensils" | "sunset";
 };
 
 export const experiencias: Experiencia[] = [
   {
-    id: "descanso",
-    titulo: { es: "Descanso", en: "Rest" },
-    texto: { es: "Aquí, el lujo es el tiempo, el espacio y el silencio.", en: "Here, luxury is time, space and silence." },
-    href: "/cabanas",
-    icono: "moon",
+    id: "piscina",
+    titulo: { es: "Piscina", en: "Pool" },
+    texto: { es: "Agua, sombra y silencio para las horas de más sol.", en: "Water, shade and silence for the sunniest hours." },
+    href: "/servicios",
+    icono: "waves",
   },
   {
     id: "naturaleza",
     titulo: { es: "Naturaleza", en: "Nature" },
     texto: {
-      es: "Cierra los ojos, escucha el viento, siente la brisa. La sierra a la vista, siempre.",
-      en: "Close your eyes, listen to the wind, feel the breeze. The mountains always in sight.",
+      es: "Cierra los ojos, escucha el agua, siente la brisa. La ciénaga a la vista, siempre.",
+      en: "Close your eyes, listen to the water, feel the breeze. The wetland always in sight.",
     },
     href: "/servicios#actividades",
     icono: "trees",
@@ -32,15 +32,17 @@ export const experiencias: Experiencia[] = [
   {
     id: "gastronomia",
     titulo: { es: "Gastronomía", en: "Food" },
-    texto: { es: "Sabores sencillos, servidos sin prisa. El detalle está en lo esencial.", en: "Simple flavours, served unhurried. The detail lies in the essentials." },
+    // TODO PENDIENTE: confirmar si hay servicio de comida en la sede San Benito; si no, reemplazar por
+    // DESCANSO: «Aquí, el lujo es el tiempo, el espacio y el silencio.» (icono "moon", href "/cabanas")
+    texto: { es: "Sabores de río y de sabana, servidos sin prisa.", en: "Flavours of the river and the savannah, served unhurried." },
     href: "/gastronomia",
     icono: "utensils",
   },
   {
     id: "momentos",
     titulo: { es: "Momentos especiales", en: "Special moments" },
-    texto: { es: "Cada amanecer desde la terraza es una promesa de renovación.", en: "Every sunrise from the terrace is a promise of renewal." },
+    texto: { es: "Cada atardecer sobre el agua es una promesa de renovación.", en: "Every sunset over the water is a promise of renewal." },
     href: "/servicios",
-    icono: "sunrise",
+    icono: "sunset",
   },
 ];

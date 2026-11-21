@@ -1,4 +1,5 @@
 import {
+  Church,
   Droplets,
   Footprints,
   Landmark,
@@ -6,8 +7,10 @@ import {
   Mountain,
   Music,
   Sunrise,
+  Sunset,
   Trees,
   UtensilsCrossed,
+  Waves,
   type LucideProps,
 } from "lucide-react";
 
@@ -22,6 +25,9 @@ const map = {
   footprints: Footprints,
   droplets: Droplets,
   landmark: Landmark,
+  church: Church,
+  waves: Waves,
+  sunset: Sunset,
 };
 
 export type IconName = keyof typeof map;

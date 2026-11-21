@@ -155,8 +155,8 @@ export function HeroIntro() {
     }
   };
   const T = {
-    es: { kicker: "A los pies de la Serranía del Perijá", sub: "Ocho cabañas en Villanueva, La Guajira, para dos.", cta: "Conoce las cabañas", pausa: "Pausar el video", play: "Reproducir el video", inicial: "A", resto: "quí, el lujo es el silencio." },
-    en: { kicker: "At the foot of the Serranía del Perijá", sub: "Eight cabins in Villanueva, La Guajira, made for two.", cta: "Discover the cabins", pausa: "Pause the video", play: "Play the video", inicial: "H", resto: "ere, silence is the luxury." },
+    es: { kicker: "Junto a la ciénaga de Machado", sub: "Ocho cabañas con piscina y aire acondicionado en San Benito Abad, Sucre.", cta: "Conoce las cabañas", pausa: "Pausar el video", play: "Reproducir el video", inicial: "A", resto: "quí, el lujo es el silencio." },
+    en: { kicker: "By the Ciénaga de Machado wetland", sub: "Eight cabins with pool and air conditioning in San Benito Abad, Sucre.", cta: "Discover the cabins", pausa: "Pause the video", play: "Play the video", inicial: "H", resto: "ere, silence is the luxury." },
   }[lang];
 
   return (

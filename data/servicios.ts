@@ -1,7 +1,7 @@
 /**
- * Pestañas Hotel / Spa / Gym. Spa y gimnasio confirmados por el cliente;
- * tratamientos, horarios y equipamiento por confirmar (no se detallan).
- * Las fotos del XD de spa y gym son de MAJA Canggu (Bali): no se usan.
+ * Pestañas Hotel / Piscina / Ciénaga / Basílica (sede San Benito Abad).
+ * Spa y gimnasio no están confirmados para esta sede, por eso no aparecen.
+ * TODO PENDIENTE: foto real de la sede para cada pestaña.
  */
 type Texto = { es: string; en: string };
 export type Servicio = {
@@ -19,30 +19,41 @@ export const servicios: Servicio[] = [
     id: "hotel",
     titulo: { es: "Hotel", en: "Hotel" },
     texto: {
-      es: "Cabañas de arquitectura blanca y madera frente a la sierra. Un diseño minimalista y funcional que no impone su presencia: dialoga con el entorno y deja que la luz, el viento y la montaña sean protagonistas.",
-      en: "Cabins of white architecture and wood facing the mountains. A minimalist, functional design that never imposes itself: it converses with the surroundings and lets light, wind and mountain take centre stage.",
+      es: "Cabañas de arquitectura blanca y madera junto al agua. Un diseño minimalista y funcional que dialoga con el entorno y deja que la luz, la brisa y la ciénaga sean protagonistas.",
+      en: "Cabins of white architecture and wood by the water. A minimalist, functional design that converses with the surroundings and lets light, breeze and wetland take centre stage.",
     },
     cta: { label: EXPLORAR, href: "/cabanas" },
-    foto: "/images/cabanas/cabana-arco.jpg",
+    foto: "/images/cabanas/cabana-arco.jpg", // TODO PENDIENTE: foto real de la sede
   },
   {
-    id: "spa",
-    titulo: { es: "Spa", en: "Spa" },
+    id: "piscina",
+    titulo: { es: "Piscina", en: "Pool" },
     texto: {
-      es: "Un espacio dedicado al cuidado del cuerpo y al descanso consciente, pensado para que la calma continúe más allá de la cabaña.",
-      en: "A space devoted to body care and mindful rest, designed so the calm continues beyond the cabin.",
+      es: "El centro del lugar. Agua fresca, deck para asolearse y sombra para las horas de calor.",
+      en: "The heart of the place. Cool water, a sun deck and shade for the hottest hours.",
     },
     cta: { label: EXPLORAR, href: "/servicios" },
-    foto: null,
+    foto: null, // TODO PENDIENTE: foto real de la piscina
   },
   {
-    id: "gym",
-    titulo: { es: "Gym", en: "Gym" },
+    id: "cienaga",
+    titulo: { es: "Ciénaga", en: "Wetland" },
     texto: {
-      es: "Movimiento y bienestar en medio de la naturaleza: un lugar para entrenar a tu ritmo, con la sierra como paisaje.",
-      en: "Movement and wellbeing in the middle of nature: a place to train at your own pace, with the mountains as your view.",
+      es: "La ciénaga de Machado rodea el pueblo. Amaneceres quietos y atardeceres que se reflejan en el agua.",
+      en: "The Ciénaga de Machado wetland surrounds the town. Still sunrises and sunsets reflected on the water.",
     },
-    cta: { label: EXPLORAR, href: "/servicios" },
-    foto: null,
+    cta: { label: EXPLORAR, href: "/servicios#cienaga-de-machado" },
+    foto: null, // TODO PENDIENTE: foto real de la ciénaga
+  },
+  {
+    id: "basilica",
+    titulo: { es: "Basílica", en: "Basilica" },
+    // TODO PENDIENTE: distancia real en minutos hasta la basílica
+    texto: {
+      es: "La Basílica Menor del Señor de los Milagros, a pocos minutos.",
+      en: "The Minor Basilica of the Lord of Miracles, a few minutes away.",
+    },
+    cta: { label: EXPLORAR, href: "/servicios#basilica-senor-de-los-milagros" },
+    foto: null, // TODO PENDIENTE: foto real de la basílica
   },
 ];

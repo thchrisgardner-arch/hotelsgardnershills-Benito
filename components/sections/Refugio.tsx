@@ -6,8 +6,8 @@ import type { Lang } from "@/lib/routes";
 /** Imagen a sangre «Un refugio privado — Inmerso en la naturaleza» */
 export function Refugio({ lang }: { lang: Lang }) {
   const t = {
-    es: { k: "Un refugio privado", l1: "Inmerso en", l2: "la naturaleza", p: "Cierra los ojos, escucha el viento, siente la brisa. Aquí, la vida se experimenta a otro ritmo.", alt: "Cabañas de Gardners Hills con la sierra al fondo" },
-    en: { k: "A private refuge", l1: "Immersed", l2: "in nature", p: "Close your eyes, listen to the wind, feel the breeze. Here, life is lived at a different pace.", alt: "Gardners Hills cabins with the mountains behind" },
+    es: { k: "Un refugio privado", l1: "Inmerso en", l2: "la naturaleza", p: "Cierra los ojos, escucha el agua, siente la brisa de la ciénaga. Aquí, la vida se experimenta a otro ritmo.", alt: "Cabañas de Gardners Hills al caer la tarde" },
+    en: { k: "A private refuge", l1: "Immersed", l2: "in nature", p: "Close your eyes, listen to the water, feel the breeze off the wetland. Here, life is lived at a different pace.", alt: "Gardners Hills cabins as the afternoon falls" },
   }[lang];
   return (
     <section
@@ -16,6 +16,7 @@ export function Refugio({ lang }: { lang: Lang }) {
       className={`relative h-[90vh] min-h-[560px] overflow-hidden ${MOSTRAR_FOTOS ? "text-marfil" : "bg-rosa text-granate"}`}
     >
       <div data-parallax="0.08" className="absolute inset-[-8%_0]">
+        {/* TODO PENDIENTE: reemplazar por foto de ciénaga o piscina (la actual muestra montaña) */}
         <Image src="/images/cabanas/cabanas-sierra.jpg" alt={t.alt} fill sizes="100vw" className="object-cover" />
       </div>
       {MOSTRAR_FOTOS && <div aria-hidden className="absolute inset-0 bg-black/40" />}

@@ -9,8 +9,8 @@ import type { Lang } from "@/lib/routes";
 export function Alrededores({ lang }: { lang: Lang }) {
   const items = actividades.slice(0, 4);
   const t = {
-    es: { l1: "Explora las actividades", l2a: "que te esperan", l2b: "cerca.", p: "Villanueva, a los pies de la Serranía del Perijá: montaña, música vallenata y vida local para descubrir sin prisa.", cta: "Ver actividades" },
-    en: { l1: "Explore the activities", l2a: "waiting for you", l2b: "nearby.", p: "Villanueva, at the foot of the Serranía del Perijá: mountains, vallenato music and local life to discover unhurried.", cta: "See activities" },
+    es: { l1: "Explora lo que", l2a: "te espera", l2b: "cerca.", p: "San Benito Abad, a orillas de la ciénaga y del río San Jorge: fe, agua y vida de pueblo para descubrir sin prisa.", cta: "Ver actividades" },
+    en: { l1: "Explore what", l2a: "awaits you", l2b: "nearby.", p: "San Benito Abad, on the banks of the wetland and the San Jorge River: faith, water and small-town life to discover unhurried.", cta: "See activities" },
   }[lang];
   return (
     <section id="actividades" aria-labelledby="act-title" className="bg-amarillo px-[var(--gutter)] py-28 sm:py-36 lg:flex lg:min-h-[100svh] lg:flex-col lg:justify-center lg:pb-28 lg:pt-[calc(var(--header-h)+1.5rem)]">

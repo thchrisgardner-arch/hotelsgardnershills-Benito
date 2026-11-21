@@ -8,8 +8,8 @@ import type { Lang } from "@/lib/routes";
 /** Resumen de cabañas para la portada: solo las dos categorías; el detalle vive en /cabanas */
 export function CabanasResumen({ lang }: { lang: Lang }) {
   const t = {
-    es: { k: "Cabañas", l1: "Un refugio propio", l2: "frente a la sierra", p: "Arquitectura blanca y madera frente a la sierra. Una invitación a detenerse, respirar y encontrar equilibrio.", cta: "Ver todas las cabañas", n: "cabañas", alt: "Cabañas de la categoría" },
-    en: { k: "Cabins", l1: "A refuge of your own", l2: "facing the mountains", p: "White architecture and wood facing the mountains. An invitation to pause, breathe and find balance.", cta: "See all cabins", n: "cabins", alt: "Cabins in the category" },
+    es: { k: "Cabañas", l1: "Un refugio propio", l2: "junto a la ciénaga", p: "Arquitectura blanca y madera a orillas del agua, con piscina y aire acondicionado. Una invitación a detenerse, respirar y encontrar equilibrio.", cta: "Ver todas las cabañas", n: "cabañas", alt: "Cabañas de la categoría" },
+    en: { k: "Cabins", l1: "A refuge of your own", l2: "by the wetland", p: "White architecture and wood by the water, with a pool and air conditioning. An invitation to pause, breathe and find balance.", cta: "See all cabins", n: "cabins", alt: "Cabins in the category" },
   }[lang];
   return (
     <section id="cabanas" aria-labelledby="cabanas-res-title" className="border-t border-granate/15 px-[var(--gutter)] py-28 sm:py-36">
