@@ -4,7 +4,7 @@
  * (Ley 1581 de 2012 y Decreto 1377 de 2013 de protección de datos; Ley 1480 de 2011, Estatuto del
  * Consumidor; Ley 679 de 2001 y Ley 1336 de 2009 contra la explotación sexual de menores).
  *
- * ⚠ PENDIENTE DEL CLIENTE: razón social, NIT, número de RNT, dirección, horarios definitivos y
+ * TODO PENDIENTE (sede San Benito): razón social, NIT, número de RNT, dirección, horarios definitivos y
  * política de cancelación. Revisión por un abogado antes de publicar.
  */
 import { site } from "@/data/site";
@@ -12,7 +12,7 @@ import type { Seccion } from "@/components/layout/LegalPage";
 
 export const ACTUALIZADO = "19 de noviembre de 2026";
 
-const responsable = `Gardners Hills (razón social y NIT por confirmar), hotel de cabañas ubicado en Villanueva, La Guajira, Colombia. Correo: ${site.contact.email}. Teléfono y WhatsApp: ${site.contact.whatsappLabel}.`;
+const responsable = `Gardners Hills (razón social y NIT por confirmar), hotel de cabañas ubicado en San Benito Abad, Sucre, Colombia. Correo: ${site.contact.email}. Teléfono y WhatsApp: ${site.contact.whatsappLabel}.`;
 
 export const terminos: { intro: string; secciones: Seccion[] } = {
   intro:

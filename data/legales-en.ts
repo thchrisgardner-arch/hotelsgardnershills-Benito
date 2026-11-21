@@ -8,7 +8,7 @@ import type { Seccion } from "@/components/layout/LegalPage";
 
 export const UPDATED = "20 November 2026";
 
-const responsible = `Gardners Hills (company name and tax ID to be confirmed), a cabin hotel located in Villanueva, La Guajira, Colombia. Email: ${site.contact.email}. Phone and WhatsApp: ${site.contact.whatsappLabel}.`;
+const responsible = `Gardners Hills (company name and tax ID to be confirmed), a cabin hotel located in San Benito Abad, Sucre, Colombia. Email: ${site.contact.email}. Phone and WhatsApp: ${site.contact.whatsappLabel}.`;
 
 export const terms: { intro: string; secciones: Seccion[] } = {
   intro:

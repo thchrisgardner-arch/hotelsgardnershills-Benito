@@ -1,7 +1,9 @@
 /**
  * Resumen de políticas de estancia (fichas de cabaña y /reservas).
  * ⚠ TEXTO DE EJEMPLO: horarios, cancelación, estancia mínima, niños y mascotas deben confirmarse
- * con el hotel. En la interfaz se muestra la marca «Texto de ejemplo» mientras EJEMPLO = true.
+ * con el hotel.
+ * TODO PENDIENTE: confirmar con el cliente para la sede San Benito (check-in, check-out, estancia mínima,
+ * mascotas, humo y cancelación). En la interfaz se muestra la marca «Texto de ejemplo» mientras EJEMPLO = true.
  */
 export const POLITICAS_EJEMPLO = true;
 
@@ -26,14 +28,17 @@ export const politicas: Politica[] = [
   {
     id: "minima",
     titulo: { es: "Estancia mínima", en: "Minimum stay" },
-    texto: { es: "1 noche · 2 noches en fines de semana festivos y temporada alta.", en: "1 night · 2 nights on holiday weekends and in high season." },
+    texto: {
+      es: "1 noche · 2 noches en fines de semana festivos y temporada alta. En las semanas de peregrinación (marzo y septiembre) la estancia mínima puede ser distinta.",
+      en: "1 night · 2 nights on holiday weekends and in high season. During the pilgrimage weeks (March and September) the minimum stay may differ.",
+    }, // TODO PENDIENTE: estancia mínima en peregrinaciones
   },
   {
     id: "ninos",
     titulo: { es: "Niños", en: "Children" },
     texto: {
-      es: "Bienvenidos en las cabañas Premium. Menores de 18 años, con documento y acompañados por un adulto.",
-      en: "Welcome in the Premium cabins. Guests under 18 must bring ID and stay with an adult.",
+      es: "Bienvenidos en todas las cabañas. Las Premium, para 3 y 4 personas, son ideales en familia. Menores de 18 años, con documento y acompañados por un adulto.",
+      en: "Welcome in every cabin. The Premium cabins, for 3 and 4 guests, are ideal for families. Guests under 18 must bring ID and stay with an adult.",
     },
   },
   {
