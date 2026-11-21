@@ -4,7 +4,7 @@ import { localizar, type Lang } from "@/lib/routes";
 
 /**
  * Datos estructurados (schema.org) del hotel para buscadores, en el idioma de la página.
- * Dirección exacta, geolocalización y redes se añaden al confirmarlas en data/site.ts.
+ * TODO PENDIENTE: dirección, teléfono y coordenadas (geo) de la sede San Benito en data/site.ts.
  */
 export function JsonLd({ lang }: { lang: Lang }) {
   const es = lang === "es";
@@ -14,8 +14,8 @@ export function JsonLd({ lang }: { lang: Lang }) {
     name: site.name,
     inLanguage: es ? "es-CO" : "en",
     description: es
-      ? "Hotel de cabañas en Villanueva, La Guajira. Un refugio en la naturaleza donde el tiempo se detiene."
-      : "Cabin hotel in Villanueva, La Guajira, Colombia. A refuge in nature where time stands still.",
+      ? "Cabañas con piscina y aire acondicionado junto a la ciénaga, a pocos minutos de la Basílica del Señor de los Milagros en San Benito Abad, Sucre."
+      : "Cabins with a pool and air conditioning by the wetland, a few minutes from the Basilica of the Lord of Miracles in San Benito Abad, Sucre, Colombia.",
     url: `${site.url}${localizar("/", lang)}`,
     image: `${site.url}/opengraph-image`,
     email: site.contact.email ?? undefined,
@@ -29,8 +29,9 @@ export function JsonLd({ lang }: { lang: Lang }) {
     },
     numberOfRooms: totalCabanas,
     amenityFeature: [
-      { "@type": "LocationFeatureSpecification", name: "Spa", value: true },
-      { "@type": "LocationFeatureSpecification", name: es ? "Gimnasio" : "Gym", value: true },
+      { "@type": "LocationFeatureSpecification", name: es ? "Piscina" : "Pool", value: true },
+      { "@type": "LocationFeatureSpecification", name: es ? "Aire acondicionado" : "Air conditioning", value: true },
+      // TODO PENDIENTE: confirmar restaurante y bar en la sede San Benito
       { "@type": "LocationFeatureSpecification", name: es ? "Restaurante y bar" : "Restaurant and bar", value: true },
     ],
     containsPlace: cabanasL(lang).map((c) => ({

@@ -14,8 +14,8 @@ import { getLang, meta, type LangParams } from "@/lib/lang";
 export async function generateMetadata({ params }: LangParams): Promise<Metadata> {
   const lang = await getLang(params);
   return meta(lang, "/servicios", {
-    es: { title: "Servicios", description: "Hotel, spa, gimnasio y actividades cerca de Gardners Hills, Villanueva, La Guajira." },
-    en: { title: "Services", description: "Hotel, spa, gym and nearby activities at Gardners Hills, Villanueva, La Guajira." },
+    es: { title: "Servicios", description: "Hotel, piscina y actividades cerca de Gardners Hills: la ciénaga, el río San Jorge y la Basílica del Señor de los Milagros en San Benito Abad, Sucre." },
+    en: { title: "Services", description: "Hotel, pool and nearby activities at Gardners Hills: the wetland, the San Jorge River and the Basilica of the Lord of Miracles in San Benito Abad, Sucre." },
   });
 }
 
@@ -46,7 +46,7 @@ export default async function ServiciosPage({ params }: LangParams) {
     <>
       <MotionController />
       <main>
-        <PageHero titulo={t.titulo} kicker="Hotel · Spa · Gym" foto="/images/cabanas/cabanas-jardin.jpg" alt={t.alt} />
+        <PageHero titulo={t.titulo} kicker={lang === "es" ? "Hotel · Piscina · Ciénaga · Basílica" : "Hotel · Pool · Wetland · Basilica"} foto="/images/cabanas/cabanas-jardin.jpg" alt={t.alt} />
 
         {/* Intro */}
         <section className="px-[var(--gutter)] py-28 sm:py-36">
@@ -66,7 +66,7 @@ export default async function ServiciosPage({ params }: LangParams) {
             </div>
           </div>
 
-          <ul className="mt-20 grid gap-x-6 gap-y-16 md:grid-cols-3">
+          <ul className="mt-20 grid gap-x-6 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
             {servicios.map((s) => (
               <li key={s.id} id={s.id} className="flex flex-col">
                 <Arch src={s.foto} alt={`${t.altServ} ${s.titulo[lang]} · Gardners Hills`} className="aspect-[3/4] w-full" sizes="(min-width: 768px) 32vw, 100vw" />

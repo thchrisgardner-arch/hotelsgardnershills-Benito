@@ -12,15 +12,15 @@ import { getLang, meta, type LangParams } from "@/lib/lang";
 export async function generateMetadata({ params }: LangParams): Promise<Metadata> {
   const lang = await getLang(params);
   return meta(lang, "/gastronomia", {
-    es: { title: "Gastronomía & Bar", description: "Restaurante y bar en Gardners Hills, Villanueva, La Guajira: sabores sencillos, servidos sin prisa." },
-    en: { title: "Food & Bar", description: "Restaurant and bar at Gardners Hills, Villanueva, La Guajira: simple flavours, served unhurried." },
+    es: { title: "Gastronomía & Bar", description: "Restaurante y bar en Gardners Hills, San Benito Abad, Sucre: sabores sencillos, servidos sin prisa." },
+    en: { title: "Food & Bar", description: "Restaurant and bar at Gardners Hills, San Benito Abad, Sucre: simple flavours, served unhurried." },
   });
 }
 
 const iconos: Record<Espacio["detalles"][number]["icono"], React.ReactNode> = {
   plato: <><circle cx="12" cy="12" r="7" /><circle cx="12" cy="12" r="3.5" /></>,
   reloj: <><circle cx="12" cy="12" r="8" /><path d="M12 7.5V12l3 2" /></>,
-  sierra: <path d="M3 18l5.5-8 3.5 5 2.5-3.5L21 18z" />,
+  agua: <path d="M3 10c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0M3 15c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0" />,
   copa: <path d="M7 4h10l-5 7zM12 11v8M8.5 19h7" />,
 };
 
@@ -29,28 +29,28 @@ export default async function GastronomiaPage({ params }: LangParams) {
   const lang = await getLang(params);
   const t = {
     es: {
-      kicker: "Gastronomía & Bar", titulo: ["El sabor", "de la sierra"], espacios: "Espacios",
-      altIntro: "Mesa servida con vista a la sierra en Gardners Hills",
+      kicker: "Gastronomía & Bar", titulo: ["El sabor", "del río y la sabana"], espacios: "Espacios",
+      altIntro: "Mesa servida con vista a la ciénaga en Gardners Hills",
       carta: "Ver carta menú", consultar: "Consultar por WhatsApp", msg: (e: string) => `Hola, quiero información sobre el ${e} de Gardners Hills.`,
       msgCarta: (e: string) => `Hola, ¿me pueden compartir la carta del ${e} de Gardners Hills?`,
       mas: ["Más allá", "de la mesa"],
       tarjetas: [
-        { titulo: "Cabañas", texto: "Arquitectura blanca y madera frente a la sierra.", href: "/cabanas" },
-        { titulo: "Actividades", texto: "Ríos, pueblo y cocina de la región a pocos pasos.", href: "/servicios#actividades" },
-        { titulo: "Servicios", texto: "Spa y gimnasio para que la calma continúe.", href: "/servicios" },
+        { titulo: "Cabañas", texto: "Arquitectura blanca y madera junto a la ciénaga.", href: "/cabanas" },
+        { titulo: "Actividades", texto: "La basílica, la ciénaga y el río San Jorge a pocos minutos.", href: "/servicios#actividades" },
+        { titulo: "Servicios", texto: "Piscina y sombra para que la calma continúe.", href: "/servicios" },
       ],
       banda: "Una mesa sin prisa te espera en Gardners Hills.",
     },
     en: {
-      kicker: "Food & Bar", titulo: ["The taste", "of the mountains"], espacios: "Spaces",
-      altIntro: "Table set with a mountain view at Gardners Hills",
+      kicker: "Food & Bar", titulo: ["The taste", "of river and savannah"], espacios: "Spaces",
+      altIntro: "Table set with a wetland view at Gardners Hills",
       carta: "View menu", consultar: "Ask on WhatsApp", msg: (e: string) => `Hello, I would like information about the Gardners Hills ${e}.`,
       msgCarta: (e: string) => `Hello, could you share the menu of the Gardners Hills ${e}?`,
       mas: ["Beyond", "the table"],
       tarjetas: [
-        { titulo: "Cabins", texto: "White architecture and wood facing the mountains.", href: "/cabanas" },
-        { titulo: "Activities", texto: "Rivers, the town and regional cuisine just steps away.", href: "/servicios#actividades" },
-        { titulo: "Services", texto: "Spa and gym so the calm carries on.", href: "/servicios" },
+        { titulo: "Cabins", texto: "White architecture and wood by the wetland.", href: "/cabanas" },
+        { titulo: "Activities", texto: "The basilica, the wetland and the San Jorge River a few minutes away.", href: "/servicios#actividades" },
+        { titulo: "Services", texto: "A pool and shade so the calm carries on.", href: "/servicios" },
       ],
       banda: "An unhurried table awaits you at Gardners Hills.",
     },

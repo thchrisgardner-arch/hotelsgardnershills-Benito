@@ -7,8 +7,8 @@ import { getLang, meta, type LangParams } from "@/lib/lang";
 export async function generateMetadata({ params }: LangParams): Promise<Metadata> {
   const lang = await getLang(params);
   return meta(lang, "/terminos", {
-    es: { title: "Términos y condiciones", description: "Términos y condiciones de Gardners Hills, hotel de cabañas en Villanueva, La Guajira." },
-    en: { title: "Terms and conditions", description: "Terms and conditions of Gardners Hills, cabin hotel in Villanueva, La Guajira." },
+    es: { title: "Términos y condiciones", description: "Términos y condiciones de Gardners Hills, hotel de cabañas en San Benito Abad, Sucre." },
+    en: { title: "Terms and conditions", description: "Terms and conditions of Gardners Hills, cabin hotel in San Benito Abad, Sucre." },
   });
 }
 

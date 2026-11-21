@@ -30,16 +30,16 @@ export const dynamicParams = false;
 
 const TXT = {
   es: {
-    title: "Gardners Hills · Hotel de cabañas en Villanueva, La Guajira",
-    description: "Hotel de cabañas en Villanueva, La Guajira. Un refugio en la naturaleza donde el tiempo se detiene.",
+    title: "Gardners Hills · Hotel de cabañas en San Benito Abad, Sucre",
+    description: "Cabañas con piscina y aire acondicionado junto a la ciénaga, a pocos minutos de la Basílica del Señor de los Milagros en San Benito Abad, Sucre.",
     og: "Gardners Hills · Un refugio en la naturaleza",
-    keywords: ["hotel de cabañas en La Guajira", "cabañas en Villanueva La Guajira", "hospedaje en Villanueva", "escapadas en La Guajira"],
+    keywords: ["hotel en San Benito Abad", "cabañas en San Benito Abad Sucre", "hospedaje cerca de la Basílica del Señor de los Milagros", "cabañas con piscina en Sucre", "escapadas desde Sincelejo"],
   },
   en: {
-    title: "Gardners Hills · Cabin hotel in Villanueva, La Guajira",
-    description: "Cabin hotel in Villanueva, La Guajira, Colombia. A refuge in nature where time stands still.",
+    title: "Gardners Hills · Cabin hotel in San Benito Abad, Sucre",
+    description: "Cabins with a pool and air conditioning by the wetland, a few minutes from the Basilica of the Lord of Miracles in San Benito Abad, Sucre, Colombia.",
     og: "Gardners Hills · A refuge in nature",
-    keywords: ["cabin hotel La Guajira", "cabins Villanueva Colombia", "where to stay in La Guajira", "nature getaway Colombia"],
+    keywords: ["hotel San Benito Abad", "cabins San Benito Abad Sucre", "where to stay near the Basilica of the Lord of Miracles", "cabins with pool Sucre Colombia"],
   },
 };
 

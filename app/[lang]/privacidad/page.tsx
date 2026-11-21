@@ -7,8 +7,8 @@ import { getLang, meta, type LangParams } from "@/lib/lang";
 export async function generateMetadata({ params }: LangParams): Promise<Metadata> {
   const lang = await getLang(params);
   return meta(lang, "/privacidad", {
-    es: { title: "Política de privacidad", description: "Política de privacidad de Gardners Hills, hotel de cabañas en Villanueva, La Guajira." },
-    en: { title: "Privacy policy", description: "Privacy policy of Gardners Hills, cabin hotel in Villanueva, La Guajira." },
+    es: { title: "Política de privacidad", description: "Política de privacidad de Gardners Hills, hotel de cabañas en San Benito Abad, Sucre." },
+    en: { title: "Privacy policy", description: "Privacy policy of Gardners Hills, cabin hotel in San Benito Abad, Sucre." },
   });
 }
 
