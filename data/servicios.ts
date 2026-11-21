@@ -1,7 +1,7 @@
 /**
  * Pestañas Hotel / Piscina / Ciénaga / Basílica (sede San Benito Abad).
  * Spa y gimnasio no están confirmados para esta sede, por eso no aparecen.
- * TODO PENDIENTE: foto de la basílica.
+ * Basílica: escena de devoción; TODO PENDIENTE: foto del edificio de la basílica.
  */
 type Texto = { es: string; en: string };
 export type Servicio = {
@@ -54,6 +54,6 @@ export const servicios: Servicio[] = [
       en: "The Minor Basilica of the Lord of Miracles, a few minutes away.",
     },
     cta: { label: EXPLORAR, href: "/servicios#basilica-senor-de-los-milagros" },
-    foto: null, // TODO PENDIENTE: foto real de la basílica
+    foto: "/images/san-benito/devocion-velas.webp",
   },
 ];

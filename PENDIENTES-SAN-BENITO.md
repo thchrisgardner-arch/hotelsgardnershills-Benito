@@ -8,7 +8,8 @@ En el código, cada punto está marcado con `TODO PENDIENTE`.
 - [ ] Dirección exacta, coordenadas o enlace de Google Maps y número de RNT.
 - [ ] Razón social y NIT para las páginas legales.
 - [x] Fotografía de la sede aplicada el 2026-11-21 (33 fotos en `public/images/san-benito`). El hero ahora usa foto: el video era de Villanueva.
-- [ ] Faltan fotos de la basílica, las peregrinaciones y el pueblo (actividades y pestaña Basílica siguen con el bloque de color).
+- [x] Fotos de peregrinaciones, pueblo y devoción agregadas (2026-11-21).
+- [ ] Foto del edificio de la Basílica: la pestaña y la actividad usan una escena de devoción con velas.
 - [ ] Si llega un video de la sede, se puede volver a poner en el hero.
 
 ## Inicio

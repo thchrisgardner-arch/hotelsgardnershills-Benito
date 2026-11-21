@@ -15,5 +15,8 @@ export const galeria: Pieza[] = [
   { id: "g9", src: I("desayuno-flotante"), alt: "Desayuno servido junto a la piscina", altEn: "Breakfast served by the pool" },
   { id: "g10", src: I("pasillo-cubierto"), alt: "Pasillo cubierto entre las cabañas", altEn: "Covered walkway between the cabins" },
   { id: "g11", src: I("duplex-escalera"), alt: "Escalera del dúplex", altEn: "Duplex staircase" },
+  { id: "g13", src: I("procesion-velas"), alt: "Procesión con velas durante la peregrinación", altEn: "Candlelit procession during the pilgrimage" },
+  { id: "g14", src: I("calle-pueblo"), alt: "Calle de casas de colores en San Benito Abad", altEn: "Street of colourful houses in San Benito Abad" },
+  { id: "g15", src: I("plaza-pueblo"), alt: "Plaza del pueblo a la sombra de los árboles", altEn: "Town square in the shade of the trees" },
   { id: "g12", src: I("vista-aerea"), alt: "Vista aérea de Gardners Hills con la ciénaga al fondo", altEn: "Aerial view of Gardners Hills with the wetland behind" },
 ];

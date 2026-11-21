@@ -8,7 +8,7 @@ export type Actividad = {
   titulo: Texto;
   texto: Texto;
   icono: "church" | "waves" | "droplets" | "footprints" | "utensils" | "landmark";
-  /** TODO PENDIENTE: fotos de la basílica, las peregrinaciones y el pueblo */
+  /** TODO PENDIENTE: foto del edificio de la basílica (hoy se usa una escena de devoción) */
   foto: string | null;
 };
 
@@ -22,7 +22,7 @@ export const actividades: Actividad[] = [
       en: "One of the most visited pilgrimage sites in the Colombian Caribbean. Its Christ arrived in the town in 1678.",
     },
     icono: "church",
-    foto: null,
+    foto: "/images/san-benito/devocion-velas.webp",
   },
   {
     id: "cienaga-de-machado",
@@ -53,7 +53,7 @@ export const actividades: Actividad[] = [
       en: "Twice a year the town fills with faith: the Feast of Forgiveness in March and on 14 September.",
     },
     icono: "footprints",
-    foto: null,
+    foto: "/images/san-benito/procesion-velas.webp",
   },
   {
     id: "gastronomia-local",
@@ -67,6 +67,6 @@ export const actividades: Actividad[] = [
     titulo: { es: "El pueblo", en: "The town" },
     texto: { es: "Calles tranquilas, plaza y vida local para descubrir a pie.", en: "Quiet streets, a main square and local life to discover on foot." },
     icono: "landmark",
-    foto: null,
+    foto: "/images/san-benito/plaza-pueblo.webp",
   },
 ];
