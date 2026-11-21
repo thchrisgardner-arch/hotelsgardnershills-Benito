@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { MotionController } from "@/components/layout/MotionController";
 import { Lines } from "@/components/ui/Lines";
+import { Foto as Image } from "@/components/ui/Foto";
 import { ContactTabs } from "@/components/contact/ContactTabs";
 import { RutasMapa } from "@/components/contact/RutasMapa";
 import { site } from "@/data/site";
@@ -43,8 +44,13 @@ export default async function ContactoPage({ params }: LangParams) {
     <>
       <MotionController />
       <main>
-        {/* Portada en fondo negro, como las demás páginas: lista para recibir una imagen de fondo */}
-        <section data-header-light className="relative mb-28 flex min-h-[100svh] flex-col items-center justify-center overflow-hidden bg-granate px-[var(--gutter)] pb-20 pt-[calc(var(--header-h)+3rem)] text-center text-marfil sm:mb-36">
+        {/* Portada con foto de la recepción de la sede */}
+        <section data-header-light className="relative isolate mb-28 flex min-h-[100svh] flex-col items-center justify-center overflow-hidden bg-granate px-[var(--gutter)] pb-20 pt-[calc(var(--header-h)+3rem)] text-center text-marfil sm:mb-36">
+          {/* Foto de fondo con velo oscuro (mismo tratamiento que las demás portadas) */}
+          <div aria-hidden className="absolute inset-0 -z-10">
+            <Image src="/images/san-benito/recepcion-fachada.webp" alt="" fill sizes="100vw" priority className="object-cover" />
+            <div className="absolute inset-0 bg-black/45" />
+          </div>
           <p data-reveal className="text-[0.92rem] font-normal uppercase tracking-[0.3em] text-marfil">
             San Benito Abad · Sucre
           </p>
