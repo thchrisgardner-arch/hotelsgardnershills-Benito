@@ -24,7 +24,7 @@ export default async function ServiciosPage({ params }: LangParams) {
   const lang = await getLang(params);
   const t = {
     es: {
-      titulo: "Servicios", alt: "Jardín de Gardners Hills",
+      titulo: "Servicios", alt: "Piscina de Gardners Hills",
       l1: "Descubre nuestros servicios", l2a: "en",
       p: "Todo lo que necesitas para que la calma continúe más allá de la cabaña. Escríbenos y te ayudamos a preparar tu estancia.",
       cta: "Reservar ahora", altServ: "Espacio de",
@@ -33,7 +33,7 @@ export default async function ServiciosPage({ params }: LangParams) {
       wa: "Escríbenos por WhatsApp", waMsg: "Hola, Gardners Hills. Quiero diseñar mi experiencia.",
     },
     en: {
-      titulo: "Services", alt: "Garden at Gardners Hills",
+      titulo: "Services", alt: "Pool at Gardners Hills",
       l1: "Discover our services", l2a: "at",
       p: "Everything you need so the calm continues beyond the cabin. Write to us and we will help you plan your stay.",
       cta: "Book now", altServ: "Area:",
@@ -46,7 +46,7 @@ export default async function ServiciosPage({ params }: LangParams) {
     <>
       <MotionController />
       <main>
-        <PageHero titulo={t.titulo} kicker={lang === "es" ? "Hotel · Piscina · Ciénaga · Basílica" : "Hotel · Pool · Wetland · Basilica"} foto="/images/cabanas/cabanas-jardin.jpg" alt={t.alt} />
+        <PageHero titulo={t.titulo} kicker={lang === "es" ? "Hotel · Piscina · Ciénaga · Basílica" : "Hotel · Pool · Wetland · Basilica"} foto="/images/san-benito/piscina-escalones.webp" alt={t.alt} />
 
         {/* Intro */}
         <section className="px-[var(--gutter)] py-28 sm:py-36">

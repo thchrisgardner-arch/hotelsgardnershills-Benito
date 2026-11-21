@@ -1,5 +1,3 @@
-import { MAQUETA } from "@/lib/maqueta";
-
 export type BrandColor =
   | "granate"
   | "carmesi"
@@ -20,9 +18,9 @@ export const PLACEHOLDER_COLOR: BrandColor | null = "rosa";
  * Interruptor de fotografías. En false, todas las imágenes del sitio se ocultan y sus espacios
  * quedan en gris (decisión del cliente, 2026-11-19). El video del hero no se ve afectado.
  * Cambiar a true para volver a mostrar las fotos.
- * Con la maqueta local activa (lib/maqueta.ts) se muestran las fotos de referencia.
+ * Desde 2026-11-21 se muestran las fotos de la sede San Benito (public/images/san-benito).
  */
-export const MOSTRAR_FOTOS = MAQUETA || false;
+export const MOSTRAR_FOTOS = true; // fotografía de la sede San Benito (2026-11-21)
 
 /** Fondo + color de línea/texto con contraste suficiente sobre ese fondo */
 export const tone: Record<BrandColor, { bg: string; fg: string }> = {

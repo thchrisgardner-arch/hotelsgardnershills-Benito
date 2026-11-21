@@ -8,6 +8,8 @@ export type Actividad = {
   titulo: Texto;
   texto: Texto;
   icono: "church" | "waves" | "droplets" | "footprints" | "utensils" | "landmark";
+  /** TODO PENDIENTE: fotos de la basílica, las peregrinaciones y el pueblo */
+  foto: string | null;
 };
 
 export const actividades: Actividad[] = [
@@ -20,6 +22,7 @@ export const actividades: Actividad[] = [
       en: "One of the most visited pilgrimage sites in the Colombian Caribbean. Its Christ arrived in the town in 1678.",
     },
     icono: "church",
+    foto: null,
   },
   {
     id: "cienaga-de-machado",
@@ -30,6 +33,7 @@ export const actividades: Actividad[] = [
       en: "Still water as far as the eye can see. Canoe rides at sunrise and sunsets reflected on the surface.",
     },
     icono: "waves",
+    foto: "/images/san-benito/canoa-cienaga-amanecer.webp",
   },
   {
     id: "rio-san-jorge",
@@ -39,6 +43,7 @@ export const actividades: Actividad[] = [
       en: "The river that gives the region its name and sets the rhythm of the riverside towns.",
     },
     icono: "droplets",
+    foto: "/images/san-benito/cienaga-garzas-atardecer.webp",
   },
   {
     id: "peregrinaciones",
@@ -48,17 +53,20 @@ export const actividades: Actividad[] = [
       en: "Twice a year the town fills with faith: the Feast of Forgiveness in March and on 14 September.",
     },
     icono: "footprints",
+    foto: null,
   },
   {
     id: "gastronomia-local",
     titulo: { es: "Cocina de la región", en: "Regional cuisine" },
     texto: { es: "Sabores de río y de sabana a pocos pasos.", en: "Flavours of the river and the savannah just steps away." },
     icono: "utensils",
+    foto: "/images/san-benito/plato-pescado.webp",
   },
   {
     id: "pueblo",
     titulo: { es: "El pueblo", en: "The town" },
     texto: { es: "Calles tranquilas, plaza y vida local para descubrir a pie.", en: "Quiet streets, a main square and local life to discover on foot." },
     icono: "landmark",
+    foto: null,
   },
 ];

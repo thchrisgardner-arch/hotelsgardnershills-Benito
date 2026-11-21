@@ -8,6 +8,7 @@ export type Experiencia = {
   titulo: Texto;
   texto: Texto;
   href: string;
+  foto: string | null;
   icono: "waves" | "trees" | "utensils" | "sunset";
 };
 
@@ -18,6 +19,7 @@ export const experiencias: Experiencia[] = [
     texto: { es: "Agua, sombra y silencio para las horas de más sol.", en: "Water, shade and silence for the sunniest hours." },
     href: "/servicios",
     icono: "waves",
+    foto: "/images/san-benito/agua-piscina.webp",
   },
   {
     id: "naturaleza",
@@ -28,6 +30,7 @@ export const experiencias: Experiencia[] = [
     },
     href: "/servicios#actividades",
     icono: "trees",
+    foto: "/images/san-benito/cienaga-garzas-atardecer.webp",
   },
   {
     id: "gastronomia",
@@ -37,6 +40,7 @@ export const experiencias: Experiencia[] = [
     texto: { es: "Sabores de río y de sabana, servidos sin prisa.", en: "Flavours of the river and the savannah, served unhurried." },
     href: "/gastronomia",
     icono: "utensils",
+    foto: "/images/san-benito/plato-pescado.webp",
   },
   {
     id: "momentos",
@@ -44,5 +48,6 @@ export const experiencias: Experiencia[] = [
     texto: { es: "Cada atardecer sobre el agua es una promesa de renovación.", en: "Every sunset over the water is a promise of renewal." },
     href: "/servicios",
     icono: "sunset",
+    foto: "/images/san-benito/atardecer-terraza-copas.webp",
   },
 ];

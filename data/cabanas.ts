@@ -5,7 +5,7 @@
  * Los slugs viejos (Villanueva) redirigen a los nuevos en next.config.ts (slugsViejos).
  *
  * TODO PENDIENTE: confirmar con el cliente medidas, camas, capacidad y servicios de cada cabaña en la sede San Benito.
- * TODO PENDIENTE: fotos reales de cada cabaña de la sede (hoy son fotogramas del video de Villanueva).
+ * Fotos: fotografía de la sede San Benito (public/images/san-benito, 2026-11-21).
  */
 import type { Lang } from "@/lib/routes";
 import { MAQUETA, fotosCabana } from "@/lib/maqueta";
@@ -49,7 +49,7 @@ export const categorias: Categoria[] = [
   },
 ];
 
-const F = (n: string) => `/images/cabanas/${n}.jpg`;
+const F = (n: string) => `/images/san-benito/${n}.webp`;
 
 const serviciosMedium = [
   "Wi-Fi",
@@ -89,7 +89,7 @@ export const cabanas: Cabana[] = [
     instalaciones: ["Aire acondicionado", "Espejo de piso a techo"],
     destacados: ["Aire acondicionado", "Espejo de piso a techo"],
     servicios: serviciosMedium,
-    fotos: [F("cabana-fachada"), F("cabanas-panoramica"), F("cabana-terraza")], // TODO PENDIENTE: fotos reales de la sede San Benito
+    fotos: [F("cabana-atardecer-piscina"), F("nicho-velas"), F("ventanal-cortina")],
   },
   {
     slug: "punta-de-blanco",
@@ -107,7 +107,7 @@ export const cabanas: Cabana[] = [
     instalaciones: ["Aire acondicionado", "Armario"],
     destacados: ["Aire acondicionado", "Armario"],
     servicios: serviciosMedium,
-    fotos: [F("cabana-arco"), F("cabanas-fila"), F("cabanas-jardin")], // TODO PENDIENTE: fotos reales de la sede San Benito
+    fotos: [F("ventanal-arco-interior"), F("toalla-tumbona"), F("textura-palma")],
   },
   {
     slug: "dona-luisa",
@@ -125,7 +125,7 @@ export const cabanas: Cabana[] = [
     instalaciones: ["Terraza", "Jacuzzi", "Aire acondicionado"],
     destacados: ["Terraza", "Jacuzzi", "Aire acondicionado"],
     servicios: serviciosMediumPlus,
-    fotos: [F("cabana-terraza"), F("cabanas-sierra"), F("cabana-fachada")], // TODO PENDIENTE: fotos reales de la sede San Benito
+    fotos: [F("vista-cabana-piscina"), F("bebida-piscina"), F("jarron-palma")],
   },
   {
     slug: "rio-san-jorge",
@@ -143,7 +143,7 @@ export const cabanas: Cabana[] = [
     instalaciones: ["Terraza", "Jacuzzi", "Aire acondicionado"],
     destacados: ["Terraza", "Jacuzzi", "Aire acondicionado"],
     servicios: serviciosMediumPlus,
-    fotos: [F("cabanas-sierra"), F("cabana-arco"), F("cabanas-panoramica")], // TODO PENDIENTE: fotos reales de la sede San Benito
+    fotos: [F("terraza-vista-cienaga"), F("duchas-exteriores"), F("agua-piscina")],
   },
   // ── Premium ──
   {
@@ -162,7 +162,7 @@ export const cabanas: Cabana[] = [
     instalaciones: ["Patio privado", "Tina", "Ideal en familia"],
     destacados: ["Patio privado", "Tina", "Ideal en familia"],
     servicios: serviciosPremium,
-    fotos: [F("cabanas-jardin"), F("cabana-terraza"), F("cabana-arco")], // TODO PENDIENTE: fotos reales de la sede San Benito
+    fotos: [F("cabana-patio-tina-2"), F("pareja-piscina"), F("piscina-escalones")],
   },
   {
     slug: "brisa-de-la-mojana",
@@ -180,7 +180,7 @@ export const cabanas: Cabana[] = [
     instalaciones: ["Patio privado", "Tina", "Ideal en familia"],
     destacados: ["Patio privado", "Tina", "Ideal en familia"],
     servicios: serviciosPremium,
-    fotos: [F("cabanas-panoramica"), F("cabanas-jardin"), F("cabanas-fila")], // TODO PENDIENTE: fotos reales de la sede San Benito
+    fotos: [F("cabana-patio-tina"), F("lectura-piscina"), F("borde-piscina")],
   },
   {
     slug: "atardecer-en-jegua",
@@ -198,7 +198,7 @@ export const cabanas: Cabana[] = [
     instalaciones: ["Dúplex", "Patio privado", "Tina"],
     destacados: ["Dúplex", "Patio privado", "Tina"],
     servicios: serviciosPremium,
-    fotos: [F("cabanas-fila"), F("cabanas-sierra"), F("cabana-terraza")], // TODO PENDIENTE: fotos reales de la sede San Benito
+    fotos: [F("duplex-escalera"), F("atardecer-terraza-copas"), F("cienaga-garzas-atardecer")],
   },
   {
     slug: "villa-de-san-benito",
@@ -216,7 +216,7 @@ export const cabanas: Cabana[] = [
     instalaciones: ["Patio privado", "Tina", "Ideal en familia"],
     destacados: ["Patio privado", "Tina", "Ideal en familia"],
     servicios: serviciosPremium,
-    fotos: [F("cabana-fachada"), F("cabanas-panoramica"), F("cabanas-jardin")], // TODO PENDIENTE: fotos reales de la sede San Benito
+    fotos: [F("cabana-familiar-interior"), F("cocina-comedor"), F("vista-aerea")],
   },
 ];
 

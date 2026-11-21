@@ -227,8 +227,8 @@ export function Header() {
           <div data-m-card className="mx-auto hidden w-full max-w-[380px] flex-col items-center text-center sm:flex">
             <div className="relative aspect-[4/5] w-full overflow-hidden bg-rosa">
               <Image
-                src="/images/cabanas/cabana-arco.jpg"
-                alt={lang === "es" ? "Cabaña de Gardners Hills con ventanal en arco junto a la ciénaga" : "Gardners Hills cabin with an arched window by the wetland"}
+                src="/images/san-benito/vista-cabana-piscina.webp"
+                alt={lang === "es" ? "Vista desde una cabaña de Gardners Hills hacia la piscina" : "View from a Gardners Hills cabin towards the pool"}
                 fill
                 sizes="460px"
                 className="object-cover"

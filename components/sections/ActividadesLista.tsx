@@ -32,7 +32,7 @@ export function ActividadesLista({ lang }: { lang: Lang }) {
         {actividades.map((a, i) => (
           // id = ancla enlazada desde la portada; scroll-mt compensa la cabecera fija
           <li key={a.id} id={a.id} className="flex scroll-mt-[calc(var(--header-h)+1.5rem)] flex-col">
-            <Arch alt={a.titulo[lang]} className="aspect-[4/5] w-full" />
+            <Arch src={a.foto} alt={a.titulo[lang]} className="aspect-[4/5] w-full" />
             <div data-reveal className="mt-7 flex items-baseline justify-between border-b border-granate/20 pb-3">
               <h3 className="font-[family-name:var(--font-display)] text-[2rem] leading-none text-granate">{a.titulo[lang]}</h3>
               <span className="text-[0.875rem] font-normal tracking-[0.18em] text-granate">{String(i + 1).padStart(2, "0")}</span>

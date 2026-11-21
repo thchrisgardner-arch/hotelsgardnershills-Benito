@@ -7,8 +7,9 @@ En el código, cada punto está marcado con `TODO PENDIENTE`.
 - [ ] Teléfono, WhatsApp y correo de la sede. Mientras llegan, el sitio usa la línea de la marca (la de Villanueva) para que los botones de WhatsApp y correo sigan funcionando. En Contacto se aclara que son datos de ejemplo.
 - [ ] Dirección exacta, coordenadas o enlace de Google Maps y número de RNT.
 - [ ] Razón social y NIT para las páginas legales.
-- [ ] Fotos reales de la sede: cabañas, piscina, ciénaga al amanecer y al atardecer, basílica y pueblo. Hoy se usan fotogramas del video de Villanueva.
-- [ ] La foto `cabanas-sierra.jpg` muestra montaña. Se usa en el bloque «Inmerso en la naturaleza», en la galería y en tres cabañas. Hay que reemplazarla por una foto de la ciénaga o de la piscina.
+- [x] Fotografía de la sede aplicada el 2026-11-21 (33 fotos en `public/images/san-benito`). El hero ahora usa foto: el video era de Villanueva.
+- [ ] Faltan fotos de la basílica, las peregrinaciones y el pueblo (actividades y pestaña Basílica siguen con el bloque de color).
+- [ ] Si llega un video de la sede, se puede volver a poner en el hero.
 
 ## Inicio
 - [ ] Gastronomía: confirmar si la sede tiene servicio de comida. Si no lo tiene, la tarjeta pasa a DESCANSO: «Aquí, el lujo es el tiempo, el espacio y el silencio.»

@@ -19,14 +19,14 @@ export async function generateMetadata({ params }: LangParams): Promise<Metadata
 export default async function CabanasPage({ params }: LangParams) {
   const lang = await getLang(params);
   const t = {
-    es: { kicker: "Bienvenidos", alt: "Cabaña de Gardners Hills con ventanal en arco", banda: "Elige tus fechas y reserva tu cabaña." },
+    es: { kicker: "Bienvenidos", alt: "Cabañas de Gardners Hills frente a la piscina", banda: "Elige tus fechas y reserva tu cabaña." },
     en: { kicker: "Welcome", alt: "Gardners Hills cabin with an arched window", banda: "Choose your dates and book your cabin." },
   }[lang];
   return (
     <>
       <MotionController />
       <main>
-        <PageHero titulo="Gardners Hills" kicker={t.kicker} foto="/images/cabanas/cabana-arco.jpg" alt={t.alt} />
+        <PageHero titulo="Gardners Hills" kicker={t.kicker} foto="/images/san-benito/cabanas-piscina.webp" alt={t.alt} />
         <Suspense>
           <Cabanas />
         </Suspense>

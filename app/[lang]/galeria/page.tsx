@@ -26,7 +26,7 @@ export default async function GaleriaPage({ params }: LangParams) {
     <>
       <MotionController />
       <main>
-        <PageHero titulo={t.titulo} kicker={t.kicker} />
+        <PageHero titulo={t.titulo} kicker={t.kicker} foto="/images/san-benito/terraza-vista-cienaga.webp" />
         <section id="galeria" className="py-28 sm:py-36">
           <Lines as="h2" className="t-recto text-center font-[family-name:var(--font-display)] text-[clamp(2.4rem,5.4vw,5.4rem)] leading-none text-granate" lines={[t.h]} />
           <div className="mt-16">

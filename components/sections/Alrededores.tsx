@@ -36,7 +36,7 @@ export function Alrededores({ lang }: { lang: Lang }) {
           <li key={a.id}>
             {/* Toda la tarjeta enlaza a su actividad en Servicios */}
             <L href={`/servicios#${a.id}`} className="group flex h-full flex-col" data-cursor>
-              <Arch alt={a.titulo[lang]} className="aspect-[3/4] w-full lg:aspect-auto lg:h-[clamp(200px,30svh,340px)]" hoverZoom />
+              <Arch src={a.foto} alt={a.titulo[lang]} className="aspect-[3/4] w-full lg:aspect-auto lg:h-[clamp(200px,30svh,340px)]" hoverZoom />
               <h3 data-reveal className="mt-7 flex items-center justify-between gap-4 border-b border-granate/20 pb-3 text-[0.92rem] font-normal uppercase tracking-[0.2em] text-granate transition-colors group-hover:border-granate group-focus-visible:border-granate lg:mt-5">
                 {a.titulo[lang]}
                 <span aria-hidden className="text-[1.1rem] transition-transform duration-500 ease-[var(--ease-soft)] group-hover:translate-x-1 group-focus-visible:translate-x-1">→</span>

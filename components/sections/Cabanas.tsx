@@ -29,7 +29,7 @@ export function Cabanas() {
       l2: "junto a la ciénaga",
       lema: "Abre el ventanal y deja que la luz y la brisa del agua entren contigo.",
       p: `${totalCabanas} cabañas en dos categorías, Refugio y Premium, de arquitectura blanca y madera, todas con aire acondicionado. Un diseño minimalista y funcional que dialoga con el entorno.`,
-      a: ["Jardín frente a las cabañas", "Fachada blanca con ventanal en arco de una cabaña", "Terrazas de madera de las cabañas"],
+      a: ["Pasillo cubierto entre las cabañas", "Cabaña con ventanal en arco junto a la piscina al atardecer", "Duchas exteriores junto a la piscina"],
     },
     en: {
       k: "Cabins",
@@ -37,7 +37,7 @@ export function Cabanas() {
       l2: "by the wetland",
       lema: "Open the window and let the light and the breeze off the water come in with you.",
       p: `${totalCabanas} cabins in two categories, Refugio and Premium, of white architecture and wood, all with air conditioning. A minimalist, functional design that converses with its surroundings.`,
-      a: ["Garden in front of the cabins", "White façade of a cabin with an arched window", "Wooden terraces of the cabins"],
+      a: ["Covered walkway between the cabins", "Cabin with an arched window by the pool at sunset", "Outdoor showers by the pool"],
     },
   }[lang];
   const cats = categoriasL(lang).filter((c) => filtro === "todas" || c.slug === filtro);
@@ -60,9 +60,9 @@ export function Cabanas() {
 
       {/* Tríptico alineado */}
       <div className="mt-20 grid grid-cols-[1fr_1.45fr_1fr] gap-3 px-[var(--gutter)] sm:gap-6">
-        <Arch src="/images/cabanas/cabanas-jardin.jpg" alt={t.a[0]} className="h-[clamp(12rem,34vw,36rem)] w-full" sizes="25vw" />
-        <Arch src="/images/cabanas/cabana-fachada.jpg" alt={t.a[1]} className="h-[clamp(12rem,34vw,36rem)] w-full" sizes="40vw" />
-        <Arch src="/images/cabanas/cabana-terraza.jpg" alt={t.a[2]} className="h-[clamp(12rem,34vw,36rem)] w-full" sizes="25vw" />
+        <Arch src="/images/san-benito/pasillo-cubierto.webp" alt={t.a[0]} className="h-[clamp(12rem,34vw,36rem)] w-full" sizes="25vw" />
+        <Arch src="/images/san-benito/cabana-atardecer-piscina.webp" alt={t.a[1]} className="h-[clamp(12rem,34vw,36rem)] w-full" sizes="40vw" />
+        <Arch src="/images/san-benito/duchas-exteriores.webp" alt={t.a[2]} className="h-[clamp(12rem,34vw,36rem)] w-full" sizes="25vw" />
       </div>
 
       {/* Filtros */}

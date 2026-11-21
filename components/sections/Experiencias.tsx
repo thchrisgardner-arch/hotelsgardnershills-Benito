@@ -7,7 +7,7 @@ import type { Lang } from "@/lib/routes";
 /** «El tiempo para disfrutar sin prisa»: fila de tarjetas alineadas; cada una enlaza a su página */
 export function Experiencias({ lang }: { lang: Lang }) {
   const t = {
-    es: { k: "Experiencias", l1: "El tiempo para", l2a: "disfrutar", l2b: "sin prisa.", mas: "Descubre más", alt: "Imagen de la experiencia" }, // TODO PENDIENTE: fotos reales de la sede
+    es: { k: "Experiencias", l1: "El tiempo para", l2a: "disfrutar", l2b: "sin prisa.", mas: "Descubre más", alt: "Imagen de la experiencia" },
     en: { k: "Experiences", l1: "Time to enjoy", l2a: "life,", l2b: "unhurried.", mas: "Discover more", alt: "Image of the experience" },
   }[lang];
   return (
@@ -25,7 +25,7 @@ export function Experiencias({ lang }: { lang: Lang }) {
         {experiencias.map((e) => (
           <li key={e.id}>
             <L href={e.href} className="group flex flex-col items-center" data-cursor>
-              <Arch shape="circle" alt={`${t.alt}: ${e.titulo[lang]}`} className="aspect-square w-full max-w-[260px]" hoverZoom />
+              <Arch shape="circle" src={e.foto} alt={`${t.alt}: ${e.titulo[lang]}`} className="aspect-square w-full max-w-[260px]" hoverZoom />
               <h3 data-reveal className="mt-7 text-[0.92rem] font-normal uppercase tracking-[0.2em] text-granate">
                 {e.titulo[lang]}
               </h3>

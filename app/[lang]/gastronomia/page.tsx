@@ -30,27 +30,27 @@ export default async function GastronomiaPage({ params }: LangParams) {
   const t = {
     es: {
       kicker: "Gastronomía & Bar", titulo: ["El sabor", "del río y la sabana"], espacios: "Espacios",
-      altIntro: "Mesa servida con vista a la ciénaga en Gardners Hills",
+      altIntro: "Desayuno servido junto a la piscina en Gardners Hills",
       carta: "Ver carta menú", consultar: "Consultar por WhatsApp", msg: (e: string) => `Hola, quiero información sobre el ${e} de Gardners Hills.`,
       msgCarta: (e: string) => `Hola, ¿me pueden compartir la carta del ${e} de Gardners Hills?`,
       mas: ["Más allá", "de la mesa"],
       tarjetas: [
-        { titulo: "Cabañas", texto: "Arquitectura blanca y madera junto a la ciénaga.", href: "/cabanas" },
-        { titulo: "Actividades", texto: "La basílica, la ciénaga y el río San Jorge a pocos minutos.", href: "/servicios#actividades" },
-        { titulo: "Servicios", texto: "Piscina y sombra para que la calma continúe.", href: "/servicios" },
+        { titulo: "Cabañas", texto: "Arquitectura blanca y madera junto a la ciénaga.", href: "/cabanas", foto: "/images/san-benito/cabana-atardecer-piscina.webp" },
+        { titulo: "Actividades", texto: "La basílica, la ciénaga y el río San Jorge a pocos minutos.", href: "/servicios#actividades", foto: "/images/san-benito/canoa-cienaga-amanecer.webp" },
+        { titulo: "Servicios", texto: "Piscina y sombra para que la calma continúe.", href: "/servicios", foto: "/images/san-benito/cabanas-piscina.webp" },
       ],
       banda: "Una mesa sin prisa te espera en Gardners Hills.",
     },
     en: {
       kicker: "Food & Bar", titulo: ["The taste", "of river and savannah"], espacios: "Spaces",
-      altIntro: "Table set with a wetland view at Gardners Hills",
+      altIntro: "Breakfast served by the pool at Gardners Hills",
       carta: "View menu", consultar: "Ask on WhatsApp", msg: (e: string) => `Hello, I would like information about the Gardners Hills ${e}.`,
       msgCarta: (e: string) => `Hello, could you share the menu of the Gardners Hills ${e}?`,
       mas: ["Beyond", "the table"],
       tarjetas: [
-        { titulo: "Cabins", texto: "White architecture and wood by the wetland.", href: "/cabanas" },
-        { titulo: "Activities", texto: "The basilica, the wetland and the San Jorge River a few minutes away.", href: "/servicios#actividades" },
-        { titulo: "Services", texto: "A pool and shade so the calm carries on.", href: "/servicios" },
+        { titulo: "Cabins", texto: "White architecture and wood by the wetland.", href: "/cabanas", foto: "/images/san-benito/cabana-atardecer-piscina.webp" },
+        { titulo: "Activities", texto: "The basilica, the wetland and the San Jorge River a few minutes away.", href: "/servicios#actividades", foto: "/images/san-benito/canoa-cienaga-amanecer.webp" },
+        { titulo: "Services", texto: "A pool and shade so the calm carries on.", href: "/servicios", foto: "/images/san-benito/cabanas-piscina.webp" },
       ],
       banda: "An unhurried table awaits you at Gardners Hills.",
     },
@@ -75,7 +75,7 @@ export default async function GastronomiaPage({ params }: LangParams) {
 
         {/* Intro: imagen a la izquierda, texto a la derecha */}
         <section className="grid gap-12 px-[var(--gutter)] py-28 sm:py-36 lg:grid-cols-12 lg:items-center">
-          <Arch alt={t.altIntro} className="aspect-[4/5] w-full lg:col-span-5" sizes="(min-width: 1024px) 40vw, 100vw" />
+          <Arch src="/images/san-benito/desayuno-flotante.webp" alt={t.altIntro} className="aspect-[4/5] w-full lg:col-span-5" sizes="(min-width: 1024px) 40vw, 100vw" />
           <p data-reveal className="font-[family-name:var(--font-display)] text-[clamp(1.8rem,3.3vw,3.4rem)] leading-[1.15] text-granate lg:col-span-6 lg:col-start-7">
             {gastronomiaIntro[lang]}
           </p>
@@ -123,7 +123,7 @@ export default async function GastronomiaPage({ params }: LangParams) {
             {t.tarjetas.map((m) => (
               <li key={m.href}>
                 <L href={m.href} className="group block" data-cursor>
-                  <Arch shape="pill" alt={m.titulo} className="aspect-[4/5] w-full" sizes="(min-width: 768px) 32vw, 100vw" hoverZoom />
+                  <Arch shape="pill" src={m.foto} alt={m.titulo} className="aspect-[4/5] w-full" sizes="(min-width: 768px) 32vw, 100vw" hoverZoom />
                   <h3 className="mt-7 border-b border-granate/20 pb-3 t-italic text-[2.6rem] leading-none text-granate transition-colors group-hover:text-carmesi">{m.titulo}</h3>
                   <p data-reveal className="mt-4 text-granate">{m.texto}</p>
                 </L>

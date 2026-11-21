@@ -33,7 +33,7 @@ export const espacios: Espacio[] = [
       en: "Cooking as a meeting point: simple dishes, regional ingredients and just the right time to enjoy them, with the light and the breeze off the wetland for company.",
     },
     detalles: [{ icono: "agua", texto: { es: "Con la ciénaga a la vista.", en: "With the wetland in view." } }],
-    foto: null,
+    foto: "/images/san-benito/plato-pescado.webp",
   },
   {
     id: "bar",
@@ -43,6 +43,6 @@ export const espacios: Espacio[] = [
       en: "As the day winds down, the bar opens the conversation. A cold drink, a quiet glass and the calm of the San Benito Abad night.",
     },
     detalles: [],
-    foto: null,
+    foto: "/images/san-benito/bebida-piscina.webp",
   },
 ];

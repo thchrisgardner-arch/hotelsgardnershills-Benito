@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import { Pill } from "@/components/ui/Pill";
 import { useLang } from "@/lib/i18n";
@@ -141,22 +142,9 @@ export function HeroIntro() {
   }, []);
 
   const { lang } = useLang();
-  const video = useRef<HTMLVideoElement>(null);
-  const [pausado, setPausado] = useState(false);
-  const alternar = () => {
-    const v = video.current;
-    if (!v) return;
-    if (v.paused) {
-      void v.play();
-      setPausado(false);
-    } else {
-      v.pause();
-      setPausado(true);
-    }
-  };
   const T = {
-    es: { kicker: "Junto a la ciénaga de Machado", sub: "Ocho cabañas con piscina y aire acondicionado en San Benito Abad, Sucre.", cta: "Conoce las cabañas", pausa: "Pausar el video", play: "Reproducir el video", inicial: "A", resto: "quí, el lujo es el silencio." },
-    en: { kicker: "By the Ciénaga de Machado wetland", sub: "Eight cabins with pool and air conditioning in San Benito Abad, Sucre.", cta: "Discover the cabins", pausa: "Pause the video", play: "Play the video", inicial: "H", resto: "ere, silence is the luxury." },
+    es: { kicker: "Junto a la ciénaga de Machado", sub: "Ocho cabañas con piscina y aire acondicionado en San Benito Abad, Sucre.", cta: "Conoce las cabañas", inicial: "A", resto: "quí, el lujo es el silencio." },
+    en: { kicker: "By the Ciénaga de Machado wetland", sub: "Eight cabins with pool and air conditioning in San Benito Abad, Sucre.", cta: "Discover the cabins", inicial: "H", resto: "ere, silence is the luxury." },
   }[lang];
 
   return (
@@ -168,20 +156,11 @@ export function HeroIntro() {
       aria-label="Gardners Hills"
       className="relative h-[100svh] min-h-[640px] overflow-hidden bg-granate text-marfil"
     >
-      {/* Ventana con el video (se abre y se expande en la intro) */}
+      {/* Ventana con la foto (se abre y se expande en la intro) */}
       <div data-frame className="absolute inset-0" style={{ clipPath: "inset(0% 0% 0% 0% round 0px)" }}>
-        <video
-          ref={video}
-          className="absolute inset-0 h-full w-full scale-[1.3] object-cover"
-          src="/video/hero-banner.mp4"
-          poster="/images/cabanas/hero-poster.jpg"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          aria-hidden
-        />
+        {/* Foto de la sede San Benito (el video del hero era de Villanueva) */}
+        <Image src="/images/san-benito/cabanas-piscina.webp" alt="" fill priority sizes="100vw" className="object-cover max-md:hidden" />
+        <Image src="/images/san-benito/vista-aerea.webp" alt="" fill priority sizes="100vw" className="object-cover md:hidden" />
         <div aria-hidden className="absolute inset-0 bg-black/40" />
         <div aria-hidden className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/30" />
       </div>
@@ -221,21 +200,6 @@ export function HeroIntro() {
         </div>
       </div>
 
-      {/* Pausar / reproducir el video (accesibilidad) */}
-      <button
-        type="button"
-        data-intro-fade
-        onClick={alternar}
-        aria-label={pausado ? T.play : T.pausa}
-        aria-pressed={pausado}
-        className="absolute bottom-6 left-[var(--gutter)] z-10 grid h-11 w-11 place-items-center rounded-full border border-marfil/80 text-marfil transition-colors hover:bg-marfil hover:text-granate max-md:bottom-[92px]"
-      >
-        {pausado ? (
-          <svg viewBox="0 0 16 16" className="h-4 w-4" fill="currentColor" aria-hidden><path d="M4 2.5v11l9-5.5z" /></svg>
-        ) : (
-          <svg viewBox="0 0 16 16" className="h-4 w-4" fill="currentColor" aria-hidden><path d="M4 2.5h3v11H4zM9 2.5h3v11H9z" /></svg>
-        )}
-      </button>
     </section>
   );
 }

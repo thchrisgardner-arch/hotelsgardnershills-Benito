@@ -1,7 +1,7 @@
 /**
  * Pestañas Hotel / Piscina / Ciénaga / Basílica (sede San Benito Abad).
  * Spa y gimnasio no están confirmados para esta sede, por eso no aparecen.
- * TODO PENDIENTE: foto real de la sede para cada pestaña.
+ * TODO PENDIENTE: foto de la basílica.
  */
 type Texto = { es: string; en: string };
 export type Servicio = {
@@ -23,7 +23,7 @@ export const servicios: Servicio[] = [
       en: "Cabins of white architecture and wood by the water. A minimalist, functional design that converses with the surroundings and lets light, breeze and wetland take centre stage.",
     },
     cta: { label: EXPLORAR, href: "/cabanas" },
-    foto: "/images/cabanas/cabana-arco.jpg", // TODO PENDIENTE: foto real de la sede
+    foto: "/images/san-benito/recepcion-fachada.webp",
   },
   {
     id: "piscina",
@@ -33,7 +33,7 @@ export const servicios: Servicio[] = [
       en: "The heart of the place. Cool water, a sun deck and shade for the hottest hours.",
     },
     cta: { label: EXPLORAR, href: "/servicios" },
-    foto: null, // TODO PENDIENTE: foto real de la piscina
+    foto: "/images/san-benito/cabanas-piscina.webp",
   },
   {
     id: "cienaga",
@@ -43,7 +43,7 @@ export const servicios: Servicio[] = [
       en: "The Ciénaga de Machado wetland surrounds the town. Still sunrises and sunsets reflected on the water.",
     },
     cta: { label: EXPLORAR, href: "/servicios#cienaga-de-machado" },
-    foto: null, // TODO PENDIENTE: foto real de la ciénaga
+    foto: "/images/san-benito/canoa-cienaga-amanecer.webp",
   },
   {
     id: "basilica",

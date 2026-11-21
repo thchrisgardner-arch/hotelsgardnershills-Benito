@@ -30,7 +30,7 @@ export function Esencia({ lang }: { lang: Lang }) {
     <section id="esencia" aria-labelledby="esencia-title" className="grid lg:grid-cols-2">
       <figure data-reveal-media className="relative min-h-[50vh] overflow-hidden bg-rosa lg:min-h-[90vh]">
         <div data-media-inner className="absolute inset-0">
-          <Image src="/images/cabanas/cabanas-jardin.jpg" alt={t.alt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
+          <Image src="/images/san-benito/cabanas-piscina.webp" alt={t.alt} fill sizes="(min-width: 1024px) 50vw, 100vw" className="object-cover" />
         </div>
       </figure>
       <div className="flex flex-col justify-between gap-16 bg-granate px-[var(--gutter)] py-20 text-marfil sm:px-16 lg:py-24">

@@ -11,7 +11,7 @@ export function Destino({ lang }: { lang: Lang }) {
       l3: "se encuentran.",
       p: "Gardners Hills nació con la idea de ofrecer un refugio íntimo en la naturaleza, donde la serenidad del entorno se combina con un diseño moderno y funcional. Nuestras cabañas miran a la ciénaga en San Benito Abad, Sucre, a pocos minutos de la basílica.",
       a1: "Fachada blanca con ventanal en arco de una cabaña de Gardners Hills",
-      a2: "Fila de cabañas de Gardners Hills frente al jardín",
+      a2: "Fila de cabañas de Gardners Hills frente a la piscina",
     },
     en: {
       l1: <>Discover <span key="a" className="text-carmesi">a destination</span></>,
@@ -19,7 +19,7 @@ export function Destino({ lang }: { lang: Lang }) {
       l3: "come together.",
       p: "Gardners Hills was born from the idea of offering an intimate refuge in nature, where the serenity of the surroundings meets modern, functional design. Our cabins look out over the wetland in San Benito Abad, Sucre, a few minutes from the basilica.",
       a1: "White façade with an arched window of a Gardners Hills cabin",
-      a2: "Row of Gardners Hills cabins facing the garden",
+      a2: "Row of Gardners Hills cabins facing the pool",
     },
   }[lang];
   return (
@@ -33,8 +33,8 @@ export function Destino({ lang }: { lang: Lang }) {
         {t.p}
       </p>
       <div className="mt-20 grid gap-6 sm:mt-24 sm:grid-cols-2">
-        <Arch src="/images/cabanas/cabana-fachada.jpg" alt={t.a1} className="aspect-[4/5] w-full" sizes="(min-width: 640px) 48vw, 100vw" />
-        <Arch src="/images/cabanas/cabanas-fila.jpg" alt={t.a2} className="aspect-[4/5] w-full" sizes="(min-width: 640px) 48vw, 100vw" />
+        <Arch src="/images/san-benito/recepcion-fachada.webp" alt={t.a1} className="aspect-[4/5] w-full" sizes="(min-width: 640px) 48vw, 100vw" />
+        <Arch src="/images/san-benito/cabanas-piscina.webp" alt={t.a2} className="aspect-[4/5] w-full" sizes="(min-width: 640px) 48vw, 100vw" />
       </div>
     </section>
   );
