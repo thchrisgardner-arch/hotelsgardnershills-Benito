@@ -8,10 +8,12 @@ import { getLang, meta, type LangParams } from "@/lib/lang";
 
 export async function generateMetadata({ params }: LangParams): Promise<Metadata> {
   const lang = await getLang(params);
-  return meta(lang, "/cabanas", {
-    es: { title: "Cabañas", description: "8 cabañas Refugio y Premium de arquitectura blanca y madera con vista a la sierra en Villanueva, La Guajira." },
-    en: { title: "Cabins", description: "8 Refugio and Premium cabins of white architecture and wood with mountain views in Villanueva, La Guajira." },
+  const m = meta(lang, "/cabanas", {
+    es: { title: "Cabañas · Gardners Hills San Benito Abad", description: "8 cabañas Refugio y Premium de arquitectura blanca y madera, con aire acondicionado y piscina, junto a la ciénaga en San Benito Abad, Sucre." },
+    en: { title: "Cabins · Gardners Hills San Benito Abad", description: "8 Refugio and Premium cabins of white architecture and wood, with air conditioning and a pool, by the wetland in San Benito Abad, Sucre." },
   });
+  // Título completo sin la plantilla «· Gardners Hills» del layout
+  return { ...m, title: { absolute: m.title as string } };
 }
 
 export default async function CabanasPage({ params }: LangParams) {

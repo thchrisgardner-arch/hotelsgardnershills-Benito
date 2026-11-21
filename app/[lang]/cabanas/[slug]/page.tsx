@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const en = getCabana(slug, "en");
   if (!es || !en) return {};
   return meta(lang, `/cabanas/${slug}`, {
-    es: { title: es.nombre, description: `${es.nombre} en Gardners Hills, Villanueva, La Guajira: ${es.area}, ${es.capacidad}, ${es.camas}. ${es.resumen}` },
-    en: { title: `${nombreCorto(en)} cabin`, description: `${nombreCorto(en)} cabin at Gardners Hills, Villanueva, La Guajira: ${en.area}, ${en.capacidad}, ${en.camas}. ${en.resumen}` },
+    es: { title: es.nombre, description: `${es.nombre} en Gardners Hills, San Benito Abad, Sucre: ${es.area}, ${es.capacidad}, ${es.camas}. ${es.resumen}` },
+    en: { title: `${nombreCorto(en)} cabin`, description: `${nombreCorto(en)} cabin at Gardners Hills, San Benito Abad, Sucre: ${en.area}, ${en.capacidad}, ${en.camas}. ${en.resumen}` },
   });
 }
 

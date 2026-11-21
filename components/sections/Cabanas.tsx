@@ -26,17 +26,17 @@ export function Cabanas() {
     es: {
       k: "Cabañas",
       l1: "Un refugio propio",
-      l2: "frente a la sierra",
-      lema: "Abre el ventanal y deja que la luz y el viento de la sierra entren contigo.",
-      p: `${totalCabanas} cabañas en dos categorías, Refugio y Premium, de arquitectura blanca y madera. Un diseño minimalista y funcional que dialoga con el entorno.`,
+      l2: "junto a la ciénaga",
+      lema: "Abre el ventanal y deja que la luz y la brisa del agua entren contigo.",
+      p: `${totalCabanas} cabañas en dos categorías, Refugio y Premium, de arquitectura blanca y madera, todas con aire acondicionado. Un diseño minimalista y funcional que dialoga con el entorno.`,
       a: ["Jardín frente a las cabañas", "Fachada blanca con ventanal en arco de una cabaña", "Terrazas de madera de las cabañas"],
     },
     en: {
       k: "Cabins",
       l1: "A refuge of your own",
-      l2: "facing the mountains",
-      lema: "Open the window and let the light and the mountain breeze come in with you.",
-      p: `${totalCabanas} cabins in two categories, Refugio and Premium, of white architecture and wood. A minimalist, functional design that converses with its surroundings.`,
+      l2: "by the wetland",
+      lema: "Open the window and let the light and the breeze off the water come in with you.",
+      p: `${totalCabanas} cabins in two categories, Refugio and Premium, of white architecture and wood, all with air conditioning. A minimalist, functional design that converses with its surroundings.`,
       a: ["Garden in front of the cabins", "White façade of a cabin with an arched window", "Wooden terraces of the cabins"],
     },
   }[lang];

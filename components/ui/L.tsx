@@ -6,7 +6,7 @@ import { useLang } from "@/lib/i18n";
 
 /**
  * Enlace interno que respeta el idioma activo: recibe la ruta canónica en español
- * («/cabanas/golden-dunes») y la convierte a la URL del idioma («/en/cabins/golden-dunes»).
+ * («/cabanas/tacasuan») y la convierte a la URL del idioma («/en/cabins/tacasuan»).
  * Enlaces externos, anclas y correos pasan tal cual.
  */
 export function L({ href, ...rest }: Omit<ComponentProps<typeof Link>, "href"> & { href: string }) {
